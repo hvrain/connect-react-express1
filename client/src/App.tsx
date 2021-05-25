@@ -1,10 +1,9 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="App">
       <button type="button" onClick={() => {
         fetch('/api/data')
         .then((res) => {
@@ -14,7 +13,6 @@ function App() {
           console.log(data);
         });
       }}>get data</button>
-    </div>
     </div>
   );
 }
